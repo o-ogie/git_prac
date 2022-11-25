@@ -17,6 +17,14 @@ function submitHandler(e){
     const writer = e.target.writer.value            //input에 있는 value를 가져와서
     const instance = new Board(subject, content, writer) 
 
+    const boards = JSON.parse(localStorage.getItem("boards")) // []
+    boards.push(instance)
+    const index = boards.length - 1
+    console.log(boards)
+
+    const item = JSON.stringify(boards) // 만든객체를 string으로 바꾸고
+    localStorage.setItem(`boards`, item)
+
     
 }
 
