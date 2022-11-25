@@ -27,7 +27,7 @@ function submitHandler(e){
     const item = JSON.stringify(boards) // 만든객체를 string으로 바꾸고
     localStorage.setItem(`boards`, item)
 
-    location.href = `./board/view.html?index=` + index
+    location.href = `/view.html?index=` + index
     
 }
 
