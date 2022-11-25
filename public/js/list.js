@@ -11,7 +11,7 @@ const tbody = document.querySelector("tbody")
 const boards = JSON.parse(item)
 
 function list(list, index){
-    return `<td>${index}}</td>
+    return `<td>${index}</td>
     <td><a>${list.subject}</a></td>
     <td>${list.writer}</td>
     <td>${list.date}</td>
