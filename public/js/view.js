@@ -35,3 +35,4 @@ back.addEventListener("click",function(e){
     e.preventDefault()
     history.go(-1)
 })
+console.log()
