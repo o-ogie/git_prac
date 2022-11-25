@@ -27,3 +27,11 @@ function viewHandler(e){
 
 next.addEventListener("click",viewHandler)
 prev.addEventListener("click",viewHandler)
+
+
+const back = document.querySelector("#back")
+
+back.addEventListener("click",function(e){
+    e.preventDefault()
+    history.go(-1)
+})
