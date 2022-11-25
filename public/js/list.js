@@ -12,7 +12,7 @@ const boards = JSON.parse(item)
 
 function list(list, index){
     return `<td>${index}</td>
-    <td><a>${list.subject}</a></td>
+    <td><a href="./view.html?index=${index}">${list.subject}</a></td>
     <td>${list.writer}</td>
     <td>${list.date}</td>
     <td>${list.hit}</td>`
