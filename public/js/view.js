@@ -17,8 +17,10 @@ view[3].innerHTML = boards[index].content
 function viewHandler(e){
     e.preventDefault()
     if(e.target.id === "next"){
+        if(boards.length-1<=index)return
         location.href = `./view.html?index=${index+1}`
     }else if(e.target.id === "prev"){
+        if(index===0)return
         location.href = `./view.html?index=${index-1}`
     }
 }
